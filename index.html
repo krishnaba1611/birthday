@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday beta 💖</title>
+  <title>Happy Birthday Brinda 💖</title>
   <link rel="stylesheet" href="style2.css" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ✨ Star Background -->
   <div class="stars"></div>
 
   <!-- 🎁 Intro -->
@@ -22,8 +21,7 @@
   <div id="mainContent" class="hidden">
     <audio id="bdayMusic" src="music/birthday.mp3" loop></audio>
 
-    <!-- ❤️ Welcome Message -->
-    <section class="page active">
+    <div class="page active" id="page1">
       <h2 class="section-title">💖 My Heartfelt Wishes</h2>
       <div class="intro-message">
         <p>
@@ -37,10 +35,9 @@
           filled with all the moments that made our story so beautiful 💫
         </p>
       </div>
-    </section>
+    </div>
 
-    <!-- 📸 Memories -->
-    <section class="page">
+    <div class="page" id="page2">
       <h2 class="section-title">📸 Beautiful Memories</h2>
       <div class="gallery">
         <img src="photo1.jpg" alt="">
@@ -48,27 +45,24 @@
         <img src="photo5.jpg" alt="">
         <img src="cake.png" alt="">
       </div>
-    </section>
+    </div>
 
-    <!-- 🎬 Videos -->
-    <section class="page">
-      <h2 class="section-title">🎬 fun videos </h2>
+    <div class="page" id="page3">
+      <h2 class="section-title">🎬 Our Videos Together</h2>
       <div class="video-grid">
         <video src="video1.mp4" controls></video>
         <video src="video2.mp4" controls></video>
         <video src="video3.mp4" controls></video>
         <video src="video4.mp4" controls></video>
       </div>
-    </section>
+    </div>
 
-    <!-- 💌 Letter -->
-    <section class="page">
+    <div class="page" id="page4">
       <h2 class="section-title">💌 Letter from the Heart</h2>
       <p id="letterText" class="letter-text"></p>
-    </section>
+    </div>
 
-    <!-- 💫 Journey -->
-    <section class="page">
+    <div class="page" id="page5">
       <h2 class="section-title">💫 Journey of Us</h2>
       <div class="journey">
         <p>📅 <b>19/08/2025</b> — Snap request accepted 💌</p>
@@ -76,10 +70,9 @@
         <p>📅 <b>29/08/2025</b> — First chocolate to make her mood better 🍫</p>
         <p>📅 <b>02/09/2025</b> — Went to the temple together — from that day our journey began and she became my comfort person 🌸✨</p>
       </div>
-    </section>
+    </div>
 
-    <!-- 🤝 Promise Page -->
-    <section class="page">
+    <div class="page" id="page6">
       <h2 class="section-title">🤝 Promises to You</h2>
       <div class="promise">
         <p>💖 I promise to always stand by your side no matter what.</p>
@@ -88,10 +81,9 @@
         <p>🍫 I promise to bring chocolates whenever you’re upset.</p>
         <p>✨ I promise to never let go — because you mean more than words can say.</p>
       </div>
-    </section>
+    </div>
 
-    <!-- 💕 Forever -->
-    <section class="page">
+    <div class="page" id="page7">
       <h2 class="section-title">💖 Forever & Always</h2>
       <div class="forever">
         <p>
@@ -102,11 +94,11 @@
           Once again — Happy Birthday, Miss Makhecha! 💝
         </p>
       </div>
-    </section>
+    </div>
 
     <button id="nextBtn" class="btn next">Next ➜</button>
   </div>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
