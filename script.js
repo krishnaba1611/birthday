@@ -29,7 +29,7 @@ nextBtn.addEventListener("click", () => {
 // Typewriter effect for Letter
 const message = `Brinda Makhecha 💖 happy bday 🎉 and thank you so much mari life ma unexpectedly entry karva mate...
 Tane khabar mane always aevu feel thay k main je prayers kari che ne mandir ma aena result ma tu mane mali chu...
-You made my world brighter every single day 💕`;
+You made my world brighter every single day 💕 i love u yarr ❤️‍🩹 `;
 
 let i = 0;
 function typeWriter() {
