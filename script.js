@@ -22,7 +22,7 @@ nextBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-const message = `Brinda Makhecha 💖 happy bday 🎉 and thank you so much mari life ma unexpectedly entry karva mate.
+const message = `Brinda Makhecha 💖 happy bday 🎉 hank you so much mari life ma unexpectedly entry karva mate.
 Tane khabar mane always aevu feel thay k main je prayers kari che ne mandir ma aena result ma tu mane mali chu.
 Hu mari life na bov dark phase ma hati jyare tu aavi tyare ane pachi tu aai atle dhime dhime badhu sarkhu thava lagyu
 and mari problems solve thava lagi 💪 and main tyare ek vastu belive kari k when the replacement from the god arrive you forgot what you have lost 💫
