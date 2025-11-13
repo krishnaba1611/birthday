@@ -138,8 +138,8 @@ body {
   white-space: pre-wrap;
 }
 
-/* 💫 Journey */
-.journey {
+/* 💫 Journey, Promise & Forever */
+.journey, .promise, .forever, .intro-message {
   max-width: 600px;
   text-align: left;
   line-height: 1.8;
@@ -147,26 +147,17 @@ body {
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(255, 182, 193, 0.2);
+  color: #ffeaf0;
 }
 
 .journey b {
   color: #ffc0cb;
 }
 
-/* 💖 Forever */
-.forever {
-  max-width: 600px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 20px;
-  line-height: 1.7;
-  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.2);
-}
-
-/* 🪄 Animations & Responsiveness */
+/* 🪄 Responsiveness */
 @media (max-width: 600px) {
   .intro-title { font-size: 1.8rem; }
   .btn { padding: 10px 20px; font-size: 0.9rem; }
   .gallery img, .video-grid video { width: 95%; }
-  .letter-text, .journey, .forever { font-size: 0.9rem; padding: 15px; }
+  .letter-text, .journey, .promise, .forever, .intro-message { font-size: 0.9rem; padding: 15px; }
 }
