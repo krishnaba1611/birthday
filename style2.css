@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at center, #0d0d0d, #1a1a1a);
+  color: #fff;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ✨ Star Animation */
+.stars {
+  width: 100%;
+  height: 100%;
+  background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  animation: twinkle 10s infinite linear;
+  opacity: 0.3;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+/* 🌸 Intro */
+.intro-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  padding: 20px;
+}
+
+.intro-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.2rem;
+  color: #ff9ac1;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #ff4d8b;
+}
+
+.btn {
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #ff8dc8;
+}
+
+/* 🎞️ Pages */
+.page {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.page.active {
+  display: flex;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🖼️ Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 90%;
+  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.4);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* 🎥 Videos */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  width: 100%;
+}
+
+.video-grid video {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 192, 203, 0.3);
+}
+
+/* 💌 Letter */
+.letter-text {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffe6f2;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 600px;
+  line-height: 1.7;
+  font-size: 1rem;
+  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.2);
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+/* 💫 Journey */
+.journey {
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.8;
+  background: rgba(255, 182, 193, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.2);
+}
+
+.journey b {
+  color: #ffc0cb;
+}
+
+/* 💖 Forever */
+.forever {
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 1.7;
+  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.2);
+}
+
+/* 🪄 Animations & Responsiveness */
+@media (max-width: 600px) {
+  .intro-title { font-size: 1.8rem; }
+  .btn { padding: 10px 20px; font-size: 0.9rem; }
+  .gallery img, .video-grid video { width: 95%; }
+  .letter-text, .journey, .forever { font-size: 0.9rem; padding: 15px; }
+}
