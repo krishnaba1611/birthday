@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Brinda 💖</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ✨ Star Background -->
+  <div class="stars"></div>
+
+  <!-- 🎁 Intro -->
+  <div class="intro-screen" id="introScreen">
+    <h1 class="intro-title">🎉 Ready for your surprise, Miss Makhecha? 💝</h1>
+    <button id="startBtn" class="btn">Start Surprise ✨</button>
+  </div>
+
+  <!-- 🌸 Main Content -->
+  <div id="mainContent" class="hidden">
+    <audio id="bdayMusic" src="music/birthday.mp3" loop></audio>
+
+    <!-- 1️⃣ Memories -->
+    <section class="page active">
+      <h2 class="section-title">📸 Beautiful Memories</h2>
+      <div class="gallery">
+        <img src="images/photo1.jpg" alt="">
+        <img src="images/photo3.jpg" alt="">
+        <img src="images/photo5.jpg" alt="">
+        <img src="images/cake.png" alt="">
+      </div>
+    </section>
+
+    <!-- 2️⃣ Videos -->
+    <section class="page">
+      <h2 class="section-title">🎬 Our Videos Together</h2>
+      <div class="video-grid">
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video3.mp4" controls></video>
+        <video src="videos/video4.mp4" controls></video>
+      </div>
+    </section>
+
+    <!-- 3️⃣ Letter -->
+    <section class="page">
+      <h2 class="section-title">💌 Letter from the Heart</h2>
+      <p id="letterText" class="letter-text"></p>
+    </section>
+
+    <!-- 4️⃣ Journey -->
+    <section class="page">
+      <h2 class="section-title">💫 Journey of Us</h2>
+      <div class="journey">
+        <p>📅 <b>19/08/2025</b> — Snap request accepted 💌</p>
+        <p>📅 <b>27/08/2025</b> — Active ride together and shared secrets 💬💞</p>
+        <p>📅 <b>29/08/2025</b> — First chocolate to make her mood better 🍫</p>
+        <p>📅 <b>02/09/2025</b> — Went to the temple together — from that day our journey began and she became my comfort person 🌸✨</p>
+      </div>
+    </section>
+
+    <!-- 5️⃣ Forever -->
+    <section class="page">
+      <h2 class="section-title">💖 Forever & Always</h2>
+      <div class="forever">
+        <p>
+          You are a gift, my favorite person.  
+          "Besides chocolate, you're my favorite." 🍫  
+          "I’ll always try to stay with you forever" ∞  
+          May this birthday fill your heart with light, love, and cake! 🎂💕  
+          Once again — Happy Birthday, Miss Makhecha! 💝
+        </p>
+      </div>
+    </section>
+
+    <button id="nextBtn" class="btn next">Next ➜</button>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
